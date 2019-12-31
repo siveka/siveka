@@ -10,7 +10,7 @@
 | zee hindi    | 1104       | hindi    | pay         | 1.00  | 1.18           |
 
 
-### table : user_list
+### Table : user_list
 
 | user_id | user_name |     email_id     | phone_number |
 |:-------:|:---------:|:----------------:|:------------:|
@@ -19,7 +19,7 @@
 |   103   |    jeni   |  jeni@gmail.com  |  9976542354  |
 
 
-### table : selection_process
+### Table : selection_process
 
 | selection_id | user_id | channel_id | price_with_tax |
 |--------------|---------|------------|----------------|
