@@ -1,9 +1,9 @@
-To find out the total number of channels selected and their total amount to the user.
+1.To find out the total number of channels selected and their total amount to the user.
 
 select count(channel_id) total_number_of_channels,sum(price_amount) total_amount from user_subscribed_list
         where user_id = 101;
 
-To find out the total number of channels selected for the given user.
+2.To find out the total number of channels selected for the given user.
 ```sql
 CREATE OR REPLACE FUNCTION FU_TOTAL_CHANNEL 
 (
@@ -17,7 +17,7 @@ select count(channel_id)as total_number_of_channels into v_total_channels from u
 END FU_TOTAL_CHANNEL;
 select fu_total_channel () from dual;
 ```
-To find out the total price amount for selected channels to the given user.
+3.To find out the total price amount for selected channels to the given user.
 ```sql
 CREATE OR REPLACE FUNCTION FU_TOTAL_AMOUNT 
 (
@@ -31,3 +31,7 @@ select sum(price_amount) total_amount into v_total_amount from user_subscribed_l
 END FU_TOTAL_AMOUNT;
 select fu_total_amount () from dual;
 ```
+4. To find out the what are channels are selected to the given user.
+
+select user_id,channel_name from user_subscribed_list where user_id=101;
+
