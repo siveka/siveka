@@ -35,3 +35,116 @@ select fu_total_amount () from dual;
 
 select user_id,channel_name from user_subscribed_list where user_id=101;
 
+create table special_packs
+(
+pack_id varchar2(10),
+pack_name varchar2(100) not null,
+number_of_channels number (10) not null,
+price decimal (10,2) not null,
+constraint pack_id_pk primary key (pack_id),
+constraint pack_name_uq unique (pack_name)
+);
+
+insert into special_packs (pack_id,pack_name,number_of_channels,price)
+values ('p2p3','south special pack',21,207.68);
+
+insert into special_packs (pack_id,pack_name,number_of_channels,price)
+values ('p2','tamil basic',11,112.10);
+
+insert into special_packs (pack_id,pack_name,number_of_channels,price)
+values ('p3','telugu basic',10,95.58);
+
+insert into special_packs (pack_id,pack_name,number_of_channels,price)
+values ('p4','hindi basic',7,57.06);
+
+insert into special_packs (pack_id,pack_name,number_of_channels,price)
+values ('p5','tamil smart pack',7,44.84);
+
+create table categories_list 
+(
+category_id varchar2(10),
+category varchar2(100) not null,
+language varchar2(50) not null,
+number_of_channels number (10) not null,
+price decimal (10,2) not null,
+constraint category_id_pk primary key (category_id),
+constraint language1_ck check (language in ('tamil','telugu','english','hindi'))
+)
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('1ta','entertainment','tamil',2,42.48);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('1te','entertainment','telugu',2,28.32);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('1en','entertainment','english',2,15.34);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('2ta','movies','tamil',2,24.78);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('2te','movies','telugu',2,31.86);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('2en','movies','english',2,25.96);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('2hi','movies','hindi',2,27.14);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('3ta','sports','tamil',1,20.06);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('3te','sports','telugu',1,22.42);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('3en','sports','english',1,22.42);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('3hi','sports','hindi',1,22.42);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('4en','knowledge','english',2,5.90);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('4ta','knowledge','tamil',2,8.26);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('5ta','news','tamil',2,2.36);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('5te','news','telugu',2,2.36);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('5hi','news','hindi',2,1.30);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('5en','news','english',2,4.72);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('6en','kids','english',1,11.80);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('6hi','kids','hindi',1,5.02);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('6ta','kids','tamil',1,7.08);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('6te','kids','telugu',1,4.72);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('7en','music','english',2,4.72);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('7hi','music','hindi',1,1.18);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('7te','music','telugu',2,5.90);
+
+insert into categories_list (category_id,category,language,number_of_channels,price)
+values ('7ta','music','tamil',1,7.08);
+
+select * from categories_list;
+
