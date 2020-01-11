@@ -148,3 +148,24 @@ values ('7ta','music','tamil',1,7.08);
 
 select * from categories_list;
 
+create table user_list
+(
+user_id number,
+user_name varchar2(50) not null,
+email_id varchar2(60) not null,
+phone_number number (10) not null,
+constraint user_id_pk primary key (user_id),
+constraint user_info_uq unique (user_id,email_id,phone_number)
+);
+
+insert into user_list (user_id,user_name,email_id,phone_number) values (&user_id,'&user_name','&email_id',&phone_number);
+--or--
+insert into user_list (user_id,user_name,email_id,phone_number) values (101,'suresh','suresh@gmail.com',9887766543);
+
+insert into user_list (user_id,user_name,email_id,phone_number) values (102,'john','john@gmail.com',9876434523);
+
+insert into user_list (user_id,user_name,email_id,phone_number) values (103,'jeni','jeni@gmail.com',9976542354);
+
+desc user_list;
+select * from user_list;
+
