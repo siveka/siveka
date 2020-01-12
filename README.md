@@ -54,11 +54,9 @@
 
 ### Table : user_subscribed_list
 
-| selection_id | user_id | channel_id | price_amount | active_date | deactive_date | payment_status |
-|:------------:|:-------:|:----------:|:------------:|:-----------:|:-------------:|:--------------:|
-|       1      |   101   |    1518    |     20.06    |  01-jan-20  |   30-jan-20   |    completed   |
-|       2      |   101   |    1423    |     22.42    |  01-jan-20  |   30-jan-20   |    completed   |
-|       3      |   102   |     609    |     00.00    |  01-jan-20  |   30-jan-20   |    completed   |
-|       4      |   103   |     609    |     00.00    |  01-jan-20  |   30-jan-20   |    completed   |
-|       5      |   103   |    1518    |     20.06    |  01-jan-20  |   30-jan-20   |    completed   |
+| selection_id | user_id | category_id | pack_id | number_of_channels | price_amount | active_date | deactive_date | payment_status |
+|:------------:|:-------:|:-----------:|:-------:|:------------------:|:------------:|:-----------:|:-------------:|:--------------:|
+|       1      |   101   |     6en     |    p2   |         12         |    123.90    |  12-JAN-20  |   10-FEB-20   |    Completed   |
+|       2      |   102   |     5hi     |    p5   |         14         |     92.16    |  11-JAN-20  |   09-FEB-20   |    Completed   |
+|       3      |   103   |     5en     |   p2p3  |         23         |    212.40    |  10-JAN-20  |   08-FEB-20   |    Completed   |
 
