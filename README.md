@@ -18,6 +18,18 @@
 |   102   |    john   |  john@gmail.com  |  9876434523  |
 |   103   |    jeni   |  jeni@gmail.com  |  9976542354  |
 
+### table : categories_list
+
+| category_id |    category   | language | number_of_channels | price |
+|:-----------:|:-------------:|:--------:|:------------------:|:-----:|
+|     1ta     | entertainment |   tamil  |          2         | 42.48 |
+|     2te     |     movies    |  telugu  |          2         | 31.86 |
+|     3en     |     sports    |  english |          1         | 22.42 |
+|     4ta     |   knowledge   |   tamil  |          2         |  8.26 |
+|     5hi     |      news     |   hindi  |          2         |  1.30 |
+|     6ta     |      kids     |   tamil  |          1         |  7.08 |
+|     7en     |     music     |  english |          2         |  4.72 |
+
 
 ### Table : user_subscribed_list
 
