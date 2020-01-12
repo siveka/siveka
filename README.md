@@ -38,7 +38,19 @@
 |    p2   |     tamil basic    |         11         | 112.10 |
 |    p3   |    telugu basic    |         10         |  95.58 |
 |    p4   |     hindi basic    |          7         |  57.06 |
-|    p5   |    english basic   |         12         |  90.86 |
+|    p5   |    english basic   |         12         |  90.86 
+
+### Table : channel_categories_list
+
+| channel_id | channel_name | language | price_amount | category_id | special_pack_id |
+|:----------:|:------------:|:--------:|:------------:|:-----------:|:---------------:|
+|    1518    |  star vijay  |   tamil  |     20.06    |     1ta     |        p2       |
+|    1423    |   star maa   |  telugu  |     22.42    |     1te     |        p3       | 
+|     206    |  star world  |  english |     9.44     |     1en     |        p5       |
+|     314    |   sony max   |   hindi  |     17.72    |     2hi     |        p4       |
+|     714    |   discovery  |  english |     4.72     |     4en     |        p5       |
+|     670    |     pogo     |   hindi  |     5.02     |     6hi     |        p4       |
+|     690    |   chutti tv  |   tamil  |     7.08     |     6ta     |        p2       |
 
 ### Table : user_subscribed_list
 
