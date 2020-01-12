@@ -195,7 +195,7 @@ create table user_subscribed_list
 selection_id number(5),
 user_id number(5)not null,
 category_id varchar2(10) not null,
-special_pack_id varchar2(10) not null,
+pack_id varchar2(10) not null,
 number_of_channels number (5) not null,
 price_amount decimal(8,2) not null,
 active_date date default sysdate,
@@ -205,18 +205,18 @@ constraint selection1_id_pk primary key (selection_id),
 constraint user1_id_fk foreign key (user_id) references user_list (user_id),
 constraint payment1_status_ck check (payment_status in ('Completed')),
 constraint category1_id_fk foreign key (category_id) references categories_list (category_id),
-constraint special1_pack_fk foreign key (special_pack_id) references special_packs (pack_id)
+constraint pack_id_fk foreign key (pack_id) references special_packs (pack_id)
 );
 
 create sequence selection_process_seq start with 1 increment by 1;
 
-insert into user_subscribed_list (selection_id,user_id,category_id,special_pack_id,number_of_channels,price_amount,deactive_date) 
+insert into user_subscribed_list (selection_id,user_id,category_id,pack_id,number_of_channels,price_amount,deactive_date) 
 values (selection_process_seq.nextval,101,'6en','p2',12,123.90,(sysdate+29));
 
-insert into user_subscribed_list (selection_id,user_id,category_id,special_pack_id,number_of_channels,price_amount,deactive_date) 
+insert into user_subscribed_list (selection_id,user_id,category_id,pack_id,number_of_channels,price_amount,deactive_date) 
 values (selection_process_seq.nextval,102,'5hi','p5',14,92.16,(sysdate+29));
 
-insert into user_subscribed_list (selection_id,user_id,category_id,special_pack_id,number_of_channels,price_amount,deactive_date) 
+insert into user_subscribed_list (selection_id,user_id,category_id,pack_id,number_of_channels,price_amount,deactive_date) 
 values (selection_process_seq.nextval,103,'5en','p2p3',23,212.40,(sysdate+29));
 
 desc user_subscribed_list;
