@@ -217,7 +217,7 @@ insert into user_subscribed_list (selection_id,user_id,category_id,pack_id,numbe
 values (selection_process_seq.nextval,102,'5hi','p5',14,92.16,(sysdate+29));
 
 insert into user_subscribed_list (selection_id,user_id,category_id,pack_id,number_of_channels,price_amount,deactive_date) 
-values (selection_process_seq.nextval,103,'5en','p2p3',23,212.40,(sysdate+29));
+values (selection_process_seq.nextval,103,'5en','p3',12,100.30,(sysdate+29));
 
 desc user_subscribed_list;
 select * from user_subscribed_list;
