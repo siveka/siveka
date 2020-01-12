@@ -18,7 +18,7 @@
 |   102   |    john   |  john@gmail.com  |  9876434523  |
 |   103   |    jeni   |  jeni@gmail.com  |  9976542354  |
 
-### table : categories_list
+### Table : categories_list
 
 | category_id |    category   | language | number_of_channels | price |
 |:-----------:|:-------------:|:--------:|:------------------:|:-----:|
@@ -30,6 +30,15 @@
 |     6ta     |      kids     |   tamil  |          1         |  7.08 |
 |     7en     |     music     |  english |          2         |  4.72 |
 
+### Table : special_packs
+
+| pack_id |      pack_name     | number_of_channels |  price |
+|:-------:|:------------------:|:------------------:|:------:|
+|   p2p3  | south special pack |         21         | 207.68 |
+|    p2   |     tamil basic    |         11         | 112.10 |
+|    p3   |    telugu basic    |         10         |  95.58 |
+|    p4   |     hindi basic    |          7         |  57.06 |
+|    p5   |    english basic   |         12         |  90.86 |
 
 ### Table : user_subscribed_list
 
